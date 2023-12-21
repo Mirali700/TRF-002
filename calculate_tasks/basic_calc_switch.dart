@@ -27,6 +27,6 @@ void main() {
       print(x / y);
 
     default:
-      print("please enter operator");
+      print("Enter operator!");
   }
 }
