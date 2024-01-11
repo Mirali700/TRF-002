@@ -4,7 +4,7 @@ int choice = 0;
 void main() {
   Customer customer1 = Customer("Mirali", 400, "11223344");
   Customer.showInfo("Mirali", 400, "11223344");
-  checkChoice();
+  checkChoice(); //!secimi yoxluyur FUNCTION dir
   if (choice == 1) {
     Customer.cashIn(customer1.userBalance!);
   } else if (choice == 2) {
@@ -37,4 +37,4 @@ class Customer {
 void checkChoice() {
   print("emeliyyat secin:\n 1-medaxil \n 2-mexaric");
   choice = int.parse(stdin.readLineSync().toString());
-}
+}//!secimi yoxluyan FUNCTION
