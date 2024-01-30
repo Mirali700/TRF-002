@@ -38,7 +38,7 @@ class Playlist extends MediaFile with Shuffleable {
   String name;
   List<Playable> mediaFiles;
 
-  Playlist(this.name, this.mediaFiles) : super("", 0, ""); 
+  Playlist(this.name, this.mediaFiles,super.title,super.duration,super.filePath); 
 
   void playPlaylist() {
     shufflePlaylist(mediaFiles);
